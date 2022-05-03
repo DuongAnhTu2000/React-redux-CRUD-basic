@@ -8,6 +8,7 @@ const userSchema = new mongoose.Schema(
     birthday: { type: String },
     role: { type: String, default: "member" },
     phone: { type: String },
+
   },
   { timestamps: true }
 );

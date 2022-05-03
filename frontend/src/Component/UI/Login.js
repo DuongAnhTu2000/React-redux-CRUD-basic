@@ -19,11 +19,8 @@ function Login() {
   const navigate = useNavigate();
   const onLogin = async (value) => {
     login(dispatch, value);
-    form.resetFields();
-  }
-
-  const handleClick = () => {
     navigate('/admin')
+    form.resetFields();
   }
   return (
     <div className="form mt-200">
@@ -40,11 +37,11 @@ function Login() {
         <h1 className='center font-size-36'>Classic Form Login</h1>
 
         <Form.Item
-          name="username"
+          name="email"
           rules={[
             {
               required: true,
-              message: 'Please input your Username!',
+              message: 'Please input your Email!',
             },
           ]}
         >
@@ -77,7 +74,7 @@ function Login() {
         </Form.Item>
 
         <Form.Item>
-          <Button type="primary" htmlType="submit" className="w-100" onClick={handleClick}>
+          <Button type="primary" htmlType="submit" className="w-100">
             Log in
           </Button>
           <div className='text-center'>

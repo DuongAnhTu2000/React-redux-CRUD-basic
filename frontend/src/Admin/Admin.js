@@ -25,6 +25,7 @@ function Admin() {
   const handleLogout = () => {
     persistor.purge();
     navigate('/');
+    window.location.reload();
   }
 
   const handleEdit = async (record) => {
