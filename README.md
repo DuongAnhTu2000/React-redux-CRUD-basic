@@ -2,7 +2,9 @@
 ### `npm run dev`
 
 Type Npm run dev to running backend
-
+account to login:
+admin@gmail.com
+123456
 ### `npm start`
 
 Runs the app in the development mode.\
